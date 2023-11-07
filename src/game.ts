@@ -16,9 +16,9 @@ const ent = new Entity('ent')
 engine.addEntity(ent)
 ent.setParent(_scene)
 const transform2 = new Transform({
-  position: new Vector3(36.12094497680664, 0, 0.4999999701976776),
-  rotation: new Quaternion(1.2866913277572757e-14, -0.7071067690849304, 8.429368847373553e-8, 0.7071068286895752),
-  scale: new Vector3(0.7250902652740479, 0.7250902652740479, 0.7493414282798767)
+  position: new Vector3(0.7775297164916992, 6.556510925292969e-7, 12.575572967529297),
+  rotation: new Quaternion(3.0521640055435452e-15, 5.960464477539063e-8, -1.359642125042847e-14, 1),
+  scale: new Vector3(0.7250906229019165, 0.7250902652740479, 0.7493419647216797)
 })
 ent.addComponentOrReplace(transform2)
 const gltfShape = new GLTFShape("28570566-60aa-40f8-8163-30796916da6d/ent.glb")
@@ -31,9 +31,9 @@ const road = new Entity('road')
 engine.addEntity(road)
 road.setParent(_scene)
 const transform3 = new Transform({
-  position: new Vector3(11.962746620178223, 0, 21.404993057250977),
-  rotation: new Quaternion(6.22352418149061e-15, 0.7071068286895752, -8.429370268459024e-8, 0.7071068286895752),
-  scale: new Vector3(0.6374179124832153, 1, 0.7640957236289978)
+  position: new Vector3(21.22247314453125, 0.0000036954879760742188, 35.9680061340332),
+  rotation: new Quaternion(-1.5898050325475425e-15, 1, -1.1920927533992653e-7, 0),
+  scale: new Vector3(0.6582372188568115, 1, 0.761204183101654)
 })
 road.addComponentOrReplace(transform3)
 const gltfShape2 = new GLTFShape("329c7a2f-3a0b-4bb0-9822-47cd770a052a/road.glb")
@@ -46,9 +46,9 @@ const externalLink = new Entity('externalLink')
 engine.addEntity(externalLink)
 externalLink.setParent(_scene)
 const transform4 = new Transform({
-  position: new Vector3(15.097437858581543, 0.4073050022125244, 4.794485092163086),
-  rotation: new Quaternion(-2.4085271740892887e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.0000035762786865, 1, 1.0000035762786865)
+  position: new Vector3(5.740260601043701, 0.24792373180389404, 33.60734176635742),
+  rotation: new Quaternion(8.650434935150633e-15, -5.960464477539063e-8, 1.8378002705808985e-14, 1),
+  scale: new Vector3(1.0000054836273193, 1, 1.0000054836273193)
 })
 externalLink.addComponentOrReplace(transform4)
 
@@ -56,11 +56,21 @@ const imageFromURL = new Entity('imageFromURL')
 engine.addEntity(imageFromURL)
 imageFromURL.setParent(_scene)
 const transform5 = new Transform({
-  position: new Vector3(14.928897857666016, 1.0937625169754028, 5.563172340393066),
-  rotation: new Quaternion(-1.5394153601527394e-15, -0.7071068286895752, 8.429369557916289e-8, 0.7071068286895752),
-  scale: new Vector3(1.809082269668579, 1.2060446739196777, 1.206053614616394)
+  position: new Vector3(5.715831279754639, 1.0937654972076416, 33.78028869628906),
+  rotation: new Quaternion(9.082819843735535e-15, -5.960464477539063e-8, 1.4825289027008484e-14, 1),
+  scale: new Vector3(1.809086799621582, 1.2060446739196777, 1.2060555219650269)
 })
 imageFromURL.addComponentOrReplace(transform5)
+
+const imageFromURL2 = new Entity('imageFromURL2')
+engine.addEntity(imageFromURL2)
+imageFromURL2.setParent(_scene)
+const transform6 = new Transform({
+  position: new Vector3(9.648666381835938, 0.4970555603504181, 2.564697265625),
+  rotation: new Quaternion(3.524067659799071e-15, -0.7071068286895752, 8.429370268459024e-8, -0.7071068286895752),
+  scale: new Vector3(1.6573753356933594, 1.0192334651947021, 0.9369896054267883)
+})
+imageFromURL2.addComponentOrReplace(transform6)
 
 const glossyAethereaTiles = new Entity('glossyAethereaTiles')
 engine.addEntity(glossyAethereaTiles)
@@ -70,77 +80,67 @@ gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
 glossyAethereaTiles.addComponentOrReplace(gltfShape3)
-const transform6 = new Transform({
+const transform7 = new Transform({
   position: new Vector3(8, 0, 8),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-glossyAethereaTiles.addComponentOrReplace(transform6)
+glossyAethereaTiles.addComponentOrReplace(transform7)
 
 const glossyAethereaTiles2 = new Entity('glossyAethereaTiles2')
 engine.addEntity(glossyAethereaTiles2)
 glossyAethereaTiles2.setParent(_scene)
 glossyAethereaTiles2.addComponentOrReplace(gltfShape3)
-const transform7 = new Transform({
+const transform8 = new Transform({
   position: new Vector3(24, 0, 8),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-glossyAethereaTiles2.addComponentOrReplace(transform7)
+glossyAethereaTiles2.addComponentOrReplace(transform8)
 
 const glossyAethereaTiles3 = new Entity('glossyAethereaTiles3')
 engine.addEntity(glossyAethereaTiles3)
 glossyAethereaTiles3.setParent(_scene)
 glossyAethereaTiles3.addComponentOrReplace(gltfShape3)
-const transform8 = new Transform({
-  position: new Vector3(40, 0, 8),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-glossyAethereaTiles3.addComponentOrReplace(transform8)
-
-const glossyAethereaTiles4 = new Entity('glossyAethereaTiles4')
-engine.addEntity(glossyAethereaTiles4)
-glossyAethereaTiles4.setParent(_scene)
-glossyAethereaTiles4.addComponentOrReplace(gltfShape3)
 const transform9 = new Transform({
   position: new Vector3(8, 0, 24),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-glossyAethereaTiles4.addComponentOrReplace(transform9)
+glossyAethereaTiles3.addComponentOrReplace(transform9)
 
-const glossyAethereaTiles5 = new Entity('glossyAethereaTiles5')
-engine.addEntity(glossyAethereaTiles5)
-glossyAethereaTiles5.setParent(_scene)
-glossyAethereaTiles5.addComponentOrReplace(gltfShape3)
+const glossyAethereaTiles4 = new Entity('glossyAethereaTiles4')
+engine.addEntity(glossyAethereaTiles4)
+glossyAethereaTiles4.setParent(_scene)
+glossyAethereaTiles4.addComponentOrReplace(gltfShape3)
 const transform10 = new Transform({
   position: new Vector3(24, 0, 24),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-glossyAethereaTiles5.addComponentOrReplace(transform10)
+glossyAethereaTiles4.addComponentOrReplace(transform10)
+
+const glossyAethereaTiles5 = new Entity('glossyAethereaTiles5')
+engine.addEntity(glossyAethereaTiles5)
+glossyAethereaTiles5.setParent(_scene)
+glossyAethereaTiles5.addComponentOrReplace(gltfShape3)
+const transform11 = new Transform({
+  position: new Vector3(8, 0, 40),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+glossyAethereaTiles5.addComponentOrReplace(transform11)
 
 const glossyAethereaTiles6 = new Entity('glossyAethereaTiles6')
 engine.addEntity(glossyAethereaTiles6)
 glossyAethereaTiles6.setParent(_scene)
 glossyAethereaTiles6.addComponentOrReplace(gltfShape3)
-const transform11 = new Transform({
-  position: new Vector3(40, 0, 24),
+const transform12 = new Transform({
+  position: new Vector3(24, 0, 40),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-glossyAethereaTiles6.addComponentOrReplace(transform11)
-
-const imageFromURL2 = new Entity('imageFromURL2')
-engine.addEntity(imageFromURL2)
-imageFromURL2.setParent(_scene)
-const transform12 = new Transform({
-  position: new Vector3(46.127872467041016, 0.4970592260360718, 9.136075973510742),
-  rotation: new Quaternion(-2.177062080483132e-15, -1, 1.1920927533992653e-7, 0),
-  scale: new Vector3(1.6573667526245117, 1.0192334651947021, 0.9369871020317078)
-})
-imageFromURL2.addComponentOrReplace(transform12)
+glossyAethereaTiles6.addComponentOrReplace(transform12)
 
 const channelId = Math.random().toString(16).slice(2)
 const channelBus = new MessageBus()
